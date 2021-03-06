@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.spring.model.User;
 
-@FeignClient(name = "UserService", url = "http://localhost:8085")
+@FeignClient(name = "${service-name}", url = "${service.base.url}")
 public interface FeignUserService {
 
 	@GetMapping(value = "/user/{email}")
