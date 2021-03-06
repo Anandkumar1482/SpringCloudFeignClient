@@ -1,0 +1,48 @@
+Features
+--------------------------
+Declarative REST Client: Feign creates a dynamic implementation of an interface decorated with JAX-RS or Spring MVC annotations
+
+ex: we just have an interface annotates with @FiegnClient.
+
+@EnableFeignClients
+---------------------------------------------
+scans for the interfaces that declare they are feign clients.
+via FeignClient @FeignClient
+
+---------------------------------------------------------------------------------------------------------
+
+
+1. How to make call to 3rd party REST service using OpenFeign client for Http GET
+
+2. How to make call to 3rd party REST service using OpenFeign client for Http PUT
+
+3. How to make call to 3rd party REST service using OpenFeign client for Http POST
+
+4. How to make call to 3rd party REST service using OpenFeign client for Http DELETE
+
+Note - Feign clients can be used to consume text-based HTTP APIs only, which means that they cannot handle binary data, e.g. file uploads or downloads. 
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+1. What is Spring RestTemplateBuilder?
+
+->A way to create spring RestTemplate in standard way.
+->it is a way to create Customizing RestTemplate
+->we can  adding timeout to RestTemplate.
+->Adding intercepters.
+intercepting helps a lot of things if we want to put  logging every request and response 
+->adding message converters like xml,json.
+
+
+2. How to create instance of Spring RestTemplate using RestTemplateBuilder?
+
+
+how to use RestTemplateBuilder
+->simply  RestTemplateBuilder.build
+->Add time out.
+->Add  logging - Intercepters -Customization.
+
+3. How the microservices communicate among each other?
+
